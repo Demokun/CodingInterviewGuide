@@ -4,7 +4,7 @@ public class Question5 {
         Stack<Integer> help = new Stack();
         while (! s.isEmpty()) {
             int cur = s.pop();
-            System.out.println(cur);
+            //System.out.println(cur);
             if (help.isEmpty() || help.peek() > cur) {
                 help.push(cur);
             }
@@ -30,8 +30,6 @@ public class Question5 {
         s.push(1);
         Question5 q = new Question5();
         q.sortStack(s);
-        for(int e:s){
-            System.out.println(s);
-        }
+        System.out.println(s);
     }
 }
